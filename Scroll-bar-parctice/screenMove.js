@@ -30,7 +30,13 @@ const handleForthScreen = (event) => {
     behavior: "smooth",
   });
 };
+
+const handleScroll = (event) => {};
+
 spans[0].addEventListener("click", handleFirstScreen);
 spans[1].addEventListener("click", handleSecondScreen);
 spans[2].addEventListener("click", handleThirdScreen);
 spans[3].addEventListener("click", handleForthScreen);
+window.addEventListener("scroll", handleScroll);
+window.addEventListener("mousewheel", handleScroll);
+window.addEventListener("touchmove", handleScroll);
