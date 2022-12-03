@@ -1,0 +1,13 @@
+#greet {
+  position: relative;
+  background-color: indianred;
+}
+#greet div {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+}
+#greet > div > span:hover {
+  cursor: pointer;
+  /* 위아래 에니메이션 추가하기 */
+}

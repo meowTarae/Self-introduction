@@ -1,14 +1,37 @@
 const page = document.getElementById("greet");
-const firstText = page.querySelector("span:first-child");
-const secondText = page.querySelector("span:nth-child(2)");
+const text = page.querySelector("span:first-child");
 const remoteBtn = page.querySelector("div");
+const myName = "My name is Tarae";
+let i = 0,
+  check;
 
-firstText.innerText = `Hello ${localStorage.getItem("username")} 👋`;
+text.innerText = `Hello ${localStorage.getItem("username")}!`;
 
-const toggleHidden = () => {
-  firstText.classList.toggle("hidden");
-  secondText.classList.toggle("hidden");
-  remoteBtn.classList.toggle("hidden");
+function typing() {
+  if (i < myName.length + 1) {
+    text.innerText = myName.substring(0, i);
+    i++;
+    setTimeout(typing, 150);
+  }
+  return text.innerText;
+}
+
+function delText() {
+  if (i >= 0) {
+    text.innerText = text.innerText.slice(0, i);
+    i--;
+    setTimeout(delText, 120);
+  }
+}
+
+const animateElements = () => {
+  i = text.innerText.length;
+  delText();
+  setTimeout(typing, 3000);
+  setTimeout(() => {
+    remoteBtn.classList.toggle("hidden"),
+      remoteBtn.classList.toggle("showText");
+  }, 8000);
 };
 
-setTimeout(toggleHidden, 2000);
+setTimeout(animateElements, 3000);
