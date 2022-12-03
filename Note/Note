@@ -1,0 +1,5 @@
+1. 기본적인 뼈대를 구성했다.
+2. form-action으로 greeting.html -> main.html로 이동
+2-1. checkLoggenIn.js를 통해
+     localStorage에 값이 있다면 greeting으로 갈 수 없게끔,
+     '' 없다면 main으로 갈 수 없게끔 설정.

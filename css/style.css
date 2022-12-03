@@ -1,6 +1,45 @@
 @import "reset.css";
 
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20210313/pngtree-colorful-pastel-cartoon-gradient-background-image_584080.jpg");
+  display: flex;
+  justify-content: center;
+}
+#background {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20210313/pngtree-colorful-pastel-cartoon-gradient-background-image_584080.jpg"); */
   background-size: cover;
+  z-index: -1;
+}
+
+#container {
+  width: 80vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+#window {
+  border: 2px solid salmon;
+  width: 98%;
+  height: 72%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.screen {
+  width: 85%;
+  height: 81%;
+  border: 2px solid salmon;
 }
