@@ -3,10 +3,11 @@
  */
 
 const username = localStorage.getItem("username");
-const currentUrl = window.location.href;
-const greetingUrl =
-  "file:///C:/Documents/GitHub/Self-introduction/greeting.html";
-const mainUrl = "file:///C:/Documents/GitHub/Self-introduction/main.html";
+const currentUrl = window.location.pathname;
+const index = currentUrl.indexOf("Self-introduction/");
+const slice = currentUrl.slice(0, index + 17);
+const greetingUrl = slice + "/greeting.html";
+const mainUrl = slice + "/main.html";
 
 if (currentUrl.includes("greeting")) {
   if (username) {
@@ -17,17 +18,3 @@ if (currentUrl.includes("greeting")) {
     window.location.href = greetingUrl;
   }
 }
-
-// if (
-//   currentUrl === "file:///C:/Documents/GitHub/Self-introduction/greeting.html"
-// ) {
-//   if (username) {
-//     window.location.href =
-//       "file:///C:/Documents/GitHub/Self-introduction/main.html";
-//   }
-// } else {
-//   if (!username) {
-//     window.location.href =
-//       "file:///C:/Documents/GitHub/Self-introduction/greeting.html";
-//   }
-// }
