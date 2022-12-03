@@ -1,5 +1,5 @@
 const screen = document.getElementById("screen");
-const greetSpan = document.querySelector("#greet .btn");
+const greetSpan = document.querySelector("#greet div");
 const spans = document.querySelectorAll(".menu .btn");
 const contents = document.querySelectorAll(".page");
 const offsetGap = contents[0].offsetTop;
