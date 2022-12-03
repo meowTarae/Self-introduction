@@ -3,3 +3,7 @@
 2-1. checkLoggenIn.js를 통해
      localStorage에 값이 있다면 greeting으로 갈 수 없게끔,
      '' 없다면 main으로 갈 수 없게끔 설정.
+3. 세부내용 들어가기 전, scrollBar 설정 먼저.
+3-1. 구조는
+        greet, index, screen 1, 2, 3
+        bgColor 넣어서 스크롤 기능 먼저 작업했다.
