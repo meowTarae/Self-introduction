@@ -1,6 +1,7 @@
 const screen = document.getElementById("screen");
-const greetSpan = document.querySelector("#greet div");
-const spans = document.querySelectorAll(".menu .btn");
+const arrowBtn = document.querySelector("#greet div");
+const menuBtn = document.querySelectorAll(".menu .btn");
+const indexBtn = document.querySelectorAll("#index span");
 const contents = document.querySelectorAll(".page");
 const offsetGap = contents[0].offsetTop;
 const firstScreenTop = contents[1].offsetTop - offsetGap;
@@ -33,19 +34,11 @@ const handleScreenThird = () => {
   });
 };
 
-greetSpan.addEventListener("click", handleScreenIndex);
-spans[0].addEventListener("click", handleScreenIndex);
-spans[1].addEventListener("click", handleScreenFirst);
-spans[2].addEventListener("click", handleScreenSecond);
-spans[3].addEventListener("click", handleScreenThird);
-
-/**
-    첫번째 화면은, 두번째 화면으로만 이동 가능
-    다시 첫번째 화면으로 올 수 없다!!!!
-
-    2번째부터 5번째 화면만 왔다갔다 할 수 있다.
-    2: index
-    3: screen1
-    4: screen2
-    5: screen3
- */
+arrowBtn.addEventListener("click", handleScreenIndex);
+menuBtn[0].addEventListener("click", handleScreenIndex);
+menuBtn[1].addEventListener("click", handleScreenFirst);
+menuBtn[2].addEventListener("click", handleScreenSecond);
+menuBtn[3].addEventListener("click", handleScreenThird);
+indexBtn[0].addEventListener("click", handleScreenFirst);
+indexBtn[1].addEventListener("click", handleScreenSecond);
+indexBtn[2].addEventListener("click", handleScreenThird);

@@ -1,37 +1,37 @@
 // querySelectorAll은 선택자의 모든 것들을 배열[] 에 담아준다.
-const spans = document.querySelectorAll("span");
+const menuSpans = document.querySelectorAll("span");
 const contents = document.querySelectorAll(".content");
 const firstTop = contents[0].offsetTop;
 const secondTop = contents[1].offsetTop;
 const thirdTop = contents[2].offsetTop;
 const forthTop = contents[3].offsetTop;
 
-const handleFirstScreen = (event) => {
+const handleFirstScreen = () => {
   window.scroll({
     top: firstTop,
     behavior: "smooth",
   });
 };
-const handleSecondScreen = (event) => {
+const handleSecondScreen = () => {
   window.scroll({
     top: secondTop,
     behavior: "smooth",
   });
 };
-const handleThirdScreen = (event) => {
+const handleThirdScreen = () => {
   window.scroll({
     top: thirdTop,
     behavior: "smooth",
   });
 };
-const handleForthScreen = (event) => {
+const handleForthScreen = () => {
   window.scroll({
     top: forthTop,
     behavior: "smooth",
   });
 };
 
-spans[0].addEventListener("click", handleFirstScreen);
-spans[1].addEventListener("click", handleSecondScreen);
-spans[2].addEventListener("click", handleThirdScreen);
-spans[3].addEventListener("click", handleForthScreen);
+menuSpans[0].addEventListener("click", handleFirstScreen);
+menuSpans[1].addEventListener("click", handleSecondScreen);
+menuSpans[2].addEventListener("click", handleThirdScreen);
+menuSpans[3].addEventListener("click", handleForthScreen);
