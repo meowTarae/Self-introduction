@@ -6,7 +6,8 @@
   position: fixed;
   top: 0;
   left: 0;
-  /* background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20210313/pngtree-colorful-pastel-cartoon-gradient-background-image_584080.jpg"); */
+  background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20210313/pngtree-colorful-pastel-cartoon-gradient-background-image_584080.jpg");
+
   background-size: cover;
   z-index: -1;
 }

@@ -1,13 +1,16 @@
 #greet {
   position: relative;
-  background-color: indianred;
 }
 #greet div {
   position: absolute;
   bottom: 10%;
   left: 50%;
+  border: 2px solid salmon;
+  width: 10%;
+  height: 10%;
 }
-#greet > div > span:hover {
+#greet > div > i:hover {
   cursor: pointer;
+  color: #d8d1ea;
   /* 위아래 에니메이션 추가하기 */
 }
