@@ -1,0 +1,41 @@
+#whoAmI {
+  display: flex;
+  flex-direction: column;
+}
+#whoAmI section {
+  width: 100%;
+  height: 100%;
+  margin-left: 4%;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.whoAmI__image {
+  border-radius: 50%;
+  border: 0.2em inset rgba(169, 175, 253, 0.5);
+  padding: 0.8%;
+}
+.whoAmI__introduce {
+  width: 50%;
+  font-size: 2em;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.whoAmI__introduce h2 {
+  color: var(--mainColor);
+  font-size: 3em;
+}
+.whoAmI__introduce h4 {
+  text-indent: 40px;
+}
+.whoAmI__introduce ol {
+  text-indent: 50px;
+}
+.whoAmI__introduce ol > li {
+  line-height: 200%;
+}
+.whoAmI__introduce ol li:last-child a {
+  outline: none;
+  color: var(--baseColor);
+}

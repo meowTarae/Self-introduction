@@ -6,6 +6,7 @@
 }
 
 #index h1 {
+  color: var(--mainColor);
   font-size: 7em;
   font-weight: 600;
   letter-spacing: 2px;
