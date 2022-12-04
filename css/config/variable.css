@@ -1,4 +1,8 @@
 :root {
   --mainColor: #a9affd;
   --baseColor: rgba(0, 0, 0, 0.7);
+  --primary: #ffce00;
+  --secondary: #fe4880;
+  --dark: #212121;
+  --light: #f3f3f3;
 }

@@ -24,4 +24,18 @@
   }
 }
 @keyframes menuBtnHover {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-16%);
+  }
+}
+@keyframes menuBtnLeave {
+  from {
+    transform: translateX(-16%);
+  }
+  to {
+    transform: translateX(0%);
+  }
 }

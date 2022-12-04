@@ -17,10 +17,13 @@
 }
 .menu .btn:hover {
   cursor: pointer;
-  transform: scale(1.1);
+  animation: menuBtnHover 0.2s ease-in-out;
+  animation-fill-mode: forwards;
+}
+.menu .btn:not(:hover) {
+  animation: menuBtnLeave 0.2s ease-in-out;
+  animation-fill-mode: forwards;
 }
 .menu .btn span {
   font-size: 25px;
-}
-.menu .btn span:hover {
 }

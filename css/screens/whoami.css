@@ -1,7 +1,8 @@
 #whoAmI section {
-  width: 100%;
-  height: 100%;
-  margin-left: 4%;
+  width: 72%;
+  height: 80%;
+
+  margin: auto;
 
   display: flex;
   justify-content: space-evenly;
@@ -11,12 +12,18 @@
   border-radius: 50%;
   border: 0.2em inset rgba(169, 175, 253, 0.5);
   padding: 0.8%;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  margin-right: 4%;
 }
 .whoAmI__introduce {
-  width: 50%;
+  width: 72%;
   font-size: 2em;
   font-weight: 600;
   letter-spacing: 2px;
+  margin-left: 6%;
+  border-radius: 25px;
+  padding-left: 2%;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
 .whoAmI__introduce h2 {
   color: var(--mainColor);
