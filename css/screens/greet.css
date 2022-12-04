@@ -1,16 +1,40 @@
 #greet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
 }
-#greet div {
+#greet .greetText {
+  margin: 0 auto;
+  margin-top: 16%;
+  font-size: 7em;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+#greet .arrowBtn {
   position: absolute;
-  bottom: 10%;
-  left: 50%;
-  border: 2px solid salmon;
   width: 10%;
   height: 10%;
+  bottom: 12%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#greet > div > i:hover {
-  cursor: pointer;
+#greet .arrowBtn:hover {
   color: #d8d1ea;
+  font-size: 1.2em;
+}
+#greet .arrowBtn i {
+  font-size: 3em;
+  font-weight: 900;
+}
+#greet > .arrowBtn > i:hover {
+  cursor: pointer;
   /* 위아래 에니메이션 추가하기 */
+}
+
+.arrowIconAni {
+  animation: angleHover 2s ease-in-out infinite;
 }
