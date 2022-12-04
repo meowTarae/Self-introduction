@@ -13,6 +13,7 @@
 @import "screens/projects.css";
 @import "screens/background.css";
 @import "screens/window.css";
+@import "screens/greeting.css";
 
 /* Components */
 @import "components/menu.css";

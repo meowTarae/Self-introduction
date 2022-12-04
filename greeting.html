@@ -5,18 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="https://unpkg.com/mvp.css@1.12/mvp.css" />
     <title>meowTarae</title>
   </head>
   <body>
     <div id="background"></div>
     <div id="container">
       <div id="window">
-        <div class="screen" id="greet">
-          <h1>Welcome 👋</h1>
-          <h2>What's your name?</h2>
+        <div class="screen" id="greeting">
+          <h1>Hi there 👋</h1>
           <form id="login" action="main.html">
-            <input type="text" minlength="1" maxlength="10" required />
+            <div class="input-group">
+              <input
+                required
+                type="text"
+                name="text"
+                autocomplete="off"
+                class="input"
+                minlength="1"
+                maxlength="10"
+                underline
+              />
+              <label class="user-label">What's your name?</label>
+            </div>
+            <!-- <input
+              type="text"
+              minlength="1"
+              maxlength="10"
+              required
+              placeholder="What's your name ?"
+            /> -->
           </form>
         </div>
       </div>
