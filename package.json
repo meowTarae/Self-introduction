@@ -1,0 +1,19 @@
+{
+  "name": "my-porfolio",
+  "version": "1.0.0",
+  "description": "My first porfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meowTarae/Self-introduction.git"
+  },
+  "author": "meowTarae",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meowTarae/Self-introduction/issues"
+  },
+  "homepage": "https://github.com/meowTarae/Self-introduction#readme"
+}

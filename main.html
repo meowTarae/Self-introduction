@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
     <script
       src="https://kit.fontawsome.com/cd93d6076f.js"
       crossorgin="anonymous"
@@ -15,6 +14,12 @@
       href="https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
     <title>meowTarae</title>
   </head>
   <body>
@@ -170,8 +175,36 @@
           <div class="page" id="projects">
             <header>📌 Projects</header>
             <section>
-              <div class="container">
-                <!-- <div class="arrow"></div> -->
+              <!-- Slider main container -->
+              <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div class="container">
+                      <div class="text-wrap">
+                        <h2>YouTube clone</h2>
+                        <br />
+                        <p>유튜브 클로닝!</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">Slide 2</div>
+                  <div class="swiper-slide">Slide 3</div>
+                  <div class="swiper-slide">Slide 4</div>
+                  ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
+              </div>
+              <!-- <div class="container">
                 <div class="cardChromeApp">
                   <div class="front">
                     <h1>Chrome_App</h1>
@@ -186,7 +219,7 @@
                     <button>Submit</button>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </section>
           </div>
         </div>
@@ -199,5 +232,7 @@
     <script src="js/checkLoggedIn.js"></script>
     <script src="js/screenMove.js"></script>
     <script src="js/greetScreen.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
   </body>
 </html>
