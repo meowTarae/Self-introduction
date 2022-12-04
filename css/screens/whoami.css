@@ -1,5 +1,5 @@
 #whoAmI section {
-  width: 72%;
+  width: 80%;
   height: 80%;
 
   margin: auto;
@@ -22,7 +22,7 @@
   letter-spacing: 2px;
   margin-left: 6%;
   border-radius: 25px;
-  padding-left: 2%;
+  padding: 2% 0 2% 2%;
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
 .whoAmI__introduce h2 {

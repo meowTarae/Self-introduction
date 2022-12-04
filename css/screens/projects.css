@@ -3,7 +3,7 @@
   height: 100%;
 }
 .swiper {
-  margin-top: 4%;
+  margin-top: 6%;
   width: 80%;
   height: 80%;
 
@@ -35,14 +35,14 @@
   margin-left: 2%;
 }
 
-.container {
+#projects .container {
   width: 100%;
   height: 100%;
 
   position: relative;
 }
 
-.container::before {
+#projects .container::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -56,16 +56,16 @@
   opacity: 0.6;
 }
 
-.container.chromeApp::before {
+#projects .container.chromeApp::before {
   background-image: url("https://cdn.wallpapersafari.com/12/37/RAg2Se.jpg");
 }
-.container.youtube::before {
+#projects .container.youtube::before {
   background-image: url("https://www.91-cdn.com/hub/wp-content/uploads/2020/03/YouTube.jpg");
 }
-.container.kakaoTalk::before {
+#projects .container.kakaoTalk::before {
   background-image: url("https://mblogthumb-phinf.pstatic.net/MjAxODAzMTFfMTAz/MDAxNTIwNzM1OTA5OTAy.cO4w5Kec68bJU57UHtcqvn4x85KmC0nSziixR3-Fw9Yg.uIIgzaWE-3rG8puugFKRslawv2qIjjvAcv-GJPa8yrEg.PNG.osy2201/32.png?type=w800");
 }
-.container.tetris::before {
+#projects .container.tetris::before {
   background-image: url("https://c4.wallpaperflare.com/wallpaper/912/194/500/video-games-digital-art-tetris-wallpaper-preview.jpg");
 }
 .text-wrap {
