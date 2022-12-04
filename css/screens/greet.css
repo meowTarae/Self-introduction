@@ -23,7 +23,7 @@
   align-items: center;
 }
 #greet .arrowBtn:hover {
-  color: #d8d1ea;
+  color: var(--mainColor);
   font-size: 1.2em;
 }
 #greet .arrowBtn i {
@@ -32,7 +32,6 @@
 }
 #greet > .arrowBtn > i:hover {
   cursor: pointer;
-  /* 위아래 에니메이션 추가하기 */
 }
 
 .arrowIconAni {

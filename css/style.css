@@ -1,5 +1,9 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap");
+
 /* Config */
-@import "reset.css";
+@import "config/reset.css";
+@import "config/variable.css";
 
 /* Screens */
 @import "screens/greet.css";
@@ -19,18 +23,14 @@ footer
 quotes 
 */
 
-/* Font */
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap");
-
 * {
   box-sizing: border-box;
 }
-/* #D8D1EA */
+
 body {
   display: flex;
   justify-content: center;
-
-  color: rgba(0, 0, 0, 0.9);
+  color: var(--baseColor);
   font-family: "Ubuntu", sans-serif;
 }
 
