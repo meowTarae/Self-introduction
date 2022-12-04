@@ -1,7 +1,3 @@
-#whoAmI {
-  display: flex;
-  flex-direction: column;
-}
 #whoAmI section {
   width: 100%;
   height: 100%;
