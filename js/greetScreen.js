@@ -29,10 +29,9 @@ const animateElements = () => {
   delText();
   setTimeout(typing, 3000);
   setTimeout(() => {
-    // remoteBtn.classList.toggle("hidden");
-    // remoteBtn.classList.toggle("showText");
-  }, 8000);
+    remoteBtn.classList.toggle("hidden"),
+      remoteBtn.classList.toggle("showText");
+  }, 7000);
 };
 
 setTimeout(animateElements, 3000);
-remoteBtn.classList.toggle("showText");
