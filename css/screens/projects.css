@@ -4,9 +4,10 @@
 }
 .swiper {
   margin-top: 4%;
-  border: 2px solid salmon;
   width: 80%;
   height: 80%;
+
+  border-radius: 25px;
 }
 .swiper-pagination-bullet {
   width: 32px;
@@ -45,7 +46,6 @@
   content: "";
   width: 100%;
   height: 100%;
-  background-image: url("https://www.91-cdn.com/hub/wp-content/uploads/2020/03/YouTube.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -53,14 +53,27 @@
   top: 0px;
   left: 0px;
   right: 0px;
-  opacity: 0.7;
+  opacity: 0.6;
+}
+
+.container.chromeApp::before {
+  background-image: url("https://cdn.wallpapersafari.com/12/37/RAg2Se.jpg");
+}
+.container.youtube::before {
+  background-image: url("https://www.91-cdn.com/hub/wp-content/uploads/2020/03/YouTube.jpg");
+}
+.container.kakaoTalk::before {
+  background-image: url("https://mblogthumb-phinf.pstatic.net/MjAxODAzMTFfMTAz/MDAxNTIwNzM1OTA5OTAy.cO4w5Kec68bJU57UHtcqvn4x85KmC0nSziixR3-Fw9Yg.uIIgzaWE-3rG8puugFKRslawv2qIjjvAcv-GJPa8yrEg.PNG.osy2201/32.png?type=w800");
+}
+.container.tetris::before {
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/912/194/500/video-games-digital-art-tetris-wallpaper-preview.jpg");
 }
 .text-wrap {
   position: absolute;
   top: 50%;
   left: 0;
   right: 0;
-  width: 40%;
+  width: 60%;
   height: 50%;
   margin: auto;
   text-align: center;
@@ -70,11 +83,17 @@
   color: white;
 }
 
-.text-wrap h2 {
-  font-size: 3em;
+.text-wrap a {
+  font-size: 4em;
+  text-decoration: none;
+  color: inherit;
+  margin-bottom: 50%;
+}
+.text-wrap p {
+  line-height: 140%;
 }
 .swiper-slide.swiper-slide-active .container .text-wrap {
   opacity: 1;
-  top: 40%;
+  top: 36%;
   transition: 1s;
 }

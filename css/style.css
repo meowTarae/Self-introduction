@@ -40,7 +40,6 @@ body {
 #screen {
   width: 85%;
   height: 81%;
-  border: 2px solid salmon;
   overflow: hidden;
 }
 

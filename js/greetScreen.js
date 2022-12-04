@@ -1,11 +1,11 @@
 const page = document.getElementById("greet");
 const text = page.querySelector("span:first-child");
 const remoteBtn = page.querySelector("div");
-const myName = "My name is Tarae";
+const myName = "My name is Tarae !";
 let i = 0,
   check;
 
-text.innerText = `Hello ${localStorage.getItem("username")}!`;
+text.innerText = `Hello ${localStorage.getItem("username")} !`;
 
 function typing() {
   if (i < myName.length + 1) {
